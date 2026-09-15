@@ -1,0 +1,72 @@
+:root {
+    --cream: #FFF8F0;
+    --brown: #6b3e26;
+    --charcoal: #2f2a26;
+
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--brown);
+    color: var(--charcoal);
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+main {
+    background-color: var(--brown);
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+h1, h2{font-family:'Courier New';
+    color: var(--cream);
+    font-weight: bold;
+}
+
+p {
+    color: var(--charcoal);
+    font-weight: bold;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: var(--cream);
+    padding: 20px;
+    text-align: center;
+}   
+
+label {
+    font-weight: bold;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*Responsive web stuff, max width is basically telling it only apply if the screen is x pixels*/
+
+@media (max-width: 768px) {
+    img, video {
+        max-width: 100%;
+        height: auto;
+    }
+
+    
+}   
