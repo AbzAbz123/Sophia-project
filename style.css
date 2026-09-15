@@ -1,3 +1,4 @@
+/*My general styling colors for the entire website*/
 :root {
     --cream: #FFF8F0;
     --brown: #6b3e26;
@@ -8,6 +9,7 @@
     box-sizing: border-box;
 }
 
+/*Styling requirements for the body part and picking my font*/
 body {
     margin: 0;
     background-color: var(--brown);
@@ -15,7 +17,7 @@ body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
 }
-
+/*styling for stuff in the main*/
 main {
     background-color: var(--brown);
     max-width: 1200px;
@@ -23,46 +25,45 @@ main {
     padding: 20px;
 }
 
+/*header 1 and header 2 font/styling requirements*/
+
 h1, h2{font-family:'Courier New';
     color: var(--cream);
     font-weight: bold;
 }
-
+/*paragraph styling requirements, separate cause I want it bolder and a different color*/
 p {
     color: var(--charcoal);
     font-weight: bold;
 }
 
+/*flex requirements for the header, makes stuff neater*/
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
     background-color: var(--cream);
     padding: 20px;
-    text-align: center;
 }   
-
+/*Bolden for better contrast stuff*/
 label {
     font-weight: bold;
 }
 
+/*make sure all the sections arent super cramped*/
 section {
     margin-bottom: 20px;
 }
 
+/*bolden the forms so it can be more visible*/
 legend {
     font-weight: bold;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
 
-/*Responsive web stuff, max width is basically telling it only apply if the screen is x pixels*/
+/*Responsive web stuff, max width is basically telling it only apply if the screen is x pixels. */
 
-@media (max-width: 768px) {
+@media (max-width: 360px) {
     img, video {
         max-width: 100%;
         height: auto;
