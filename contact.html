@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="favs.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact North Star Bakery</title>
@@ -33,17 +34,19 @@
 
 <section>
     <h2>Submit a request!</h2>
-
-    <form>
+    <!--Added id for form so javascript can interact-->
+    <form id="contact-form">
         <!--Groups form stuff together-->
         <fieldset>
             <legend>Bakery questions/Pre ordering</legend>
             <!--labels to identify all of the form fields-->
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
+            <p id="name-error"></p>
 
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
+            <p id="email-error"></p>
 
             <label for="pickup-date">Pickup Date:</label>
             <input type="date" id="pickup-date" name="pickup-date" required>
@@ -59,6 +62,9 @@
             <label for="item-details">Explain your item details</label>
             <!--Defining text area so users can provide info-->
             <textarea id="item-details" name="item details" rows="5" cols="50" required></textarea>
+            <p id="item-details-error"></p>
+
+            
             <label for="allergies">Any allergies we should be aware of?</label>
             <textarea id="allergies" name="allergies" rows="5" cols="50"></textarea>
             <button type="submit">Submit Request</button>
