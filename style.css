@@ -3,6 +3,8 @@
     --cream: #FFF8F0;
     --brown: #6b3e26;
     --charcoal: #2f2a26;
+    --peach: #f5c6aa;
+    --black: #000000;
 
 }
 * {
@@ -13,7 +15,7 @@
 body {
     margin: 0;
     background-color: var(--brown);
-    color: var(--charcoal);
+    color: var(--peach);
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
 }
@@ -31,9 +33,14 @@ h1, h2{font-family:'Courier New';
     color: var(--cream);
     font-weight: bold;
 }
+
+figcaption {
+    font-weight: bold;
+    color: var(--peach);
+}
 /*paragraph styling requirements, separate cause I want it bolder and a different color*/
 p {
-    color: var(--charcoal);
+    color: var(--peach);
     font-weight: bold;
 }
 
